@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "title": "HP EliteBook Ultra",
+    "price": 1200,
+    "image": "https://i.ibb.co/C7kMwNn/HP-Elite-Book-Ultra.png",
+    "category": "Laptops",
+    "description": "A lightweight business laptop with powerful performance.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch FHD display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "title": "Dell XPS 13 9345",
+    "price": 1300,
+    "image": "https://i.ibb.co/Jmcq0N6/Dell-XPS-13-9345.png",
+    "category": "Laptops",
+    "description": "A compact laptop with a stunning 4K display and powerful internals.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD",
+      "13.3-inch 4K display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "title": "MacBook Air M3",
+    "price": 999,
+    "image": "https://i.ibb.co/FXgg59V/Mac-Book-Air-M3.png",
+    "category": "MacBook",
+    "description": "Apple's ultra-thin laptop powered by the M3 chip.",
+    "specification": [
+      "Apple M3 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13.6-inch Retina display"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "title": "MacBook Pro",
+    "price": 2499,
+    "image": "https://i.ibb.co/yWb3sHm/Mac-Book-Pro.png",
+    "category": "MacBook",
+    "description": "High-performance laptop with M3 chip for professionals.",
+    "specification": [
+      "Apple M3 Pro chip",
+      "16GB RAM",
+      "512GB SSD",
+      "16-inch Retina display"
+    ],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 1199,
+    "image": "https://i.ibb.co/fdMv1cq/Samsung-Galaxy-S24-Ultra.png",
+    "category": "Phones",
+    "description": "A flagship phone with incredible camera capabilities and performance.",
+    "specification": [
+      "Snapdragon 8 Gen 2",
+      "12GB RAM",
+      "256GB Storage",
+      "6.8-inch QHD+ AMOLED display"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "title": "Apple iPhone 16 Pro Max",
+    "price": 1499,
+    "image": "https://i.ibb.co/wrM9nhn/Apple-i-Phone-16-Pro-Max.png",
+    "category": "Iphone",
+    "description": "Apple's most advanced phone with impressive features.",
+    "specification": [
+      "Apple A17 Bionic chip",
+      "8GB RAM",
+      "1TB Storage",
+      "6.7-inch Super Retina XDR display"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "title": "Samsung Galaxy Z Fold6",
+    "price": 1799,
+    "image": "https://i.ibb.co/3v35Gjm/Samsung-Galaxy-Z-Fold6.png",
+    "category": "Phones",
+    "description": "A revolutionary foldable smartphone for multitasking.",
+    "specification": [
+      "Snapdragon 8 Gen 2",
+      "12GB RAM",
+      "512GB Storage",
+      "7.6-inch Foldable AMOLED display"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "id": 8,
+    "title": "Apple iPhone 14",
+    "price": 799,
+    "image": "https://i.ibb.co/mzD5Kz1/Apple-i-Phone-14.png",
+    "category": "Iphone",
+    "description": "An affordable yet powerful iPhone with advanced features.",
+    "specification": [
+      "Apple A15 Bionic chip",
+      "6GB RAM",
+      "128GB Storage",
+      "6.1-inch Super Retina XDR display"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "id": 9,
+    "title": "Galaxy Watch 6",
+    "price": 349,
+    "image": "https://i.ibb.co/cgL3LXg/Galaxy-Watch-6.png",
+    "category": "Smart Watches",
+    "description": "Samsung's advanced smartwatch with health tracking features.",
+    "specification": [
+      "Wear OS",
+      "1.5GB RAM",
+      "16GB Storage",
+      "1.4-inch AMOLED display"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "title": "Google Pixel Watch 3",
+    "price": 399,
+    "image": "https://i.ibb.co/VBMbrtV/Google-Pixel-Watch-3.png",
+    "category": "Smart Watches",
+    "description": "Google's latest smartwatch with enhanced functionality.",
+    "specification": [
+      "Wear OS",
+      "2GB RAM",
+      "32GB Storage",
+      "1.2-inch AMOLED display"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "id": 11,
+    "title": "Sony WF-1000XM5",
+    "price": 299,
+    "image": "https://i.ibb.co/c1k44Nc/Sony-WF-1000-XM5.png",
+    "category": "Accessories",
+    "description": "Top-notch wireless earbuds with industry-leading noise cancellation.",
+    "specification": [
+      "Noise cancellation",
+      "Bluetooth 5.2",
+      "24-hour battery life",
+      "IPX4 water resistance"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "title": "Ear (a)",
+    "price": 129,
+    "image": "https://i.ibb.co/sHtVjCc/Ear-a.png",
+    "category": "Accessories",
+    "description": "Affordable, stylish wireless earbuds with decent sound quality.",
+    "specification": [
+      "Bluetooth 5.0",
+      "20-hour battery life",
+      "IPX5 water resistance"
+    ],
+    "availability": true,
+    "rating": 4.1
+  }
+]
