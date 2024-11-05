@@ -42,14 +42,14 @@ const ProductPage = () => {
         <p className="text-yellow-500 font-semibold">Rating: {product.rating} ★</p>
         <button
           onClick={addToCart}
-          className="bg-blue-500 text-white px-4 py-2 mt-4 rounded"
+          className="bg-purple-500 btn text-white px-4 py-2 mt-4 rounded hover:bg-purple-600"
           disabled={!product.availability}
         >
           {product.availability ? "Add to Cart" : "Unavailable"}
         </button>
         <button
           onClick={addToWishlist}
-          className="bg-purple-500 text-white px-4 py-2 mt-4 ml-2 rounded"
+          className="bg-purple-500 btn text-white px-4 py-2 mt-4 ml-2 rounded hover:bg-purple-600"
           disabled={!product.availability}
         >
           {product.availability ? "Add to Wishlist" : "Unavailable"}

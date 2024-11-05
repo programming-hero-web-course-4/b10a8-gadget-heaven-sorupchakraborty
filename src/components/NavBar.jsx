@@ -6,7 +6,7 @@ import BannerImg from "../assets/banner.jpg";
 
 const Navbar = () => {
     return (
-        <div className="container mx-auto bg-[#9538E2] " >
+        <div className="container mx-auto bg-[#9538E2] p-2 mt-8 rounded-t-2xl " >
             <div className=" flex justify-between items-center pt-5">
                 <div className="">
                     <NavLink to="/" className="btn btn-ghost text-xl text-white">
@@ -41,8 +41,8 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="">
-                    <div className="dropdown dropdown-end">
+                <div className=" flex items-center">
+                    <div className="">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle bg-white">
                             <div className="indicator">
                                 <img
@@ -53,7 +53,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="dropdown dropdown-end mx-2">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle bg-white">
+                        <div tabIndex={0} role="button" className="btn btn-circle bg-white">
                             <img
                                 src={wishlistIcon}
                                 alt="Wishlist"

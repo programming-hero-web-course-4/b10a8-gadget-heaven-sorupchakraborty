@@ -4,7 +4,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   const categories = ["All Products", "Laptops", "Phones", "Accessories", "Smart Watches", "MacBook", "Iphone"];
 
   return (
-    <aside className="w-1/4 px-4">
+    <aside className="w-1/4 px-4 py-4">
       <div className="border text-center rounded-xl">
         <ul className="py-4">
           {categories.map((category) => (
