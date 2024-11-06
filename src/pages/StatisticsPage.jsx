@@ -3,11 +3,11 @@ import { Helmet } from "react-helmet-async";
 
 const StatisticsPage = () => {
   return (
-    <div>
+    <div className="p-10">
       <Helmet>
         <title>Statistics - TechVerse</title>
       </Helmet>
-      Statistics Page
+      <h1 className=" text-4xl font-bold text-center"> Statistics Page</h1>
     </div>
   );
 };

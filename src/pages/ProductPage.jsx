@@ -29,7 +29,7 @@ const ProductPage = () => {
         <title>{product.title} - TechVerse</title>
       </Helmet>
       <div className="text-center bg-[#9538E2] p-5 rounded-2xl">
-        <h2 className="text-3xl text-white">Product Details</h2>
+        <h2 className="text-4xl font-bold my-5 text-white">Product Details</h2>
         <p className="text-white  max-w-[60%] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
       </div>
 

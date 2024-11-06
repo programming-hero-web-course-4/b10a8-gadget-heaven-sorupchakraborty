@@ -31,7 +31,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => (isActive ? "font-semibold btn bg-[#9538E2] text-white border-none" : "btn bg-[#9538E2] text-white")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn bg-[#9538E2] text-white hover:bg-purple-700 border-none" : "btn bg-[#9538E2] text-white hover:bg-purple-700 ")}
                             >
                                 Home
                             </NavLink>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/dashboard"
-                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black " : "btn bg-[#9538E2] text-white border-none")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black hover:bg-slate-800 " : "btn bg-[#9538E2] text-white border-none hover:bg-purple-700 ")}
                             >
                                 Dashboard
                             </NavLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/statistics"
-                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black" : "btn bg-[#9538E2] text-white border-none")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black hover:bg-slate-800" : "btn bg-[#9538E2] hover:bg-purple-700 text-white border-none")}
                             >
                                 Stats
                             </NavLink>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/about"
-                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black" : "btn bg-[#9538E2] text-white border-none")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn text-white bg-black hover:bg-slate-800" : "btn bg-[#9538E2] hover:bg-purple-700 text-white border-none")}
                             >
                                 About
                             </NavLink>
@@ -68,7 +68,7 @@ const Navbar = () => {
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost btn-circle"
+                            className="btn btn-circle"
                             onClick={() => handleNavigate("cart")}
                         >
                             <div className="indicator">

@@ -4,13 +4,13 @@ const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-gray-100">
       <div className="w-full max-w-3xl p-8 bg-white shadow-lg rounded-lg">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">About GadgetHeaven</h1>
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">About TechVerse</h1>
         <p className="text-lg text-gray-700 text-center mb-8">
-          Welcome to <span className="font-semibold">GadgetHeaven</span> your go-to destination for the latest and greatest gadgets.
+          Welcome to <span className="font-semibold">TechVerse</span> your go-to destination for the latest and greatest gadgets.
           We are passionate about bringing you the finest selection of technology products designed to make your life smarter, faster, and more connected.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Choose GadgetHeaven?</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Choose TechVerse?</h2>
         <ul className="list-disc pl-5 space-y-2 mb-6">
           <li><span className="font-medium text-gray-800">Diverse Selection:</span> A wide range of gadgets to meet every need and preference.</li>
           <li><span className="font-medium text-gray-800">User-Friendly Experience:</span> Easy-to-use features like an intuitive cart and wishlist system.</li>
@@ -24,13 +24,13 @@ const About = () => {
         </p>
 
         <p className="text-lg text-gray-700 text-center">
-          At GadgetHeaven, were here to keep you connected with the latest tech innovations, all while offering an enjoyable, seamless shopping experience.
+          At TechVerse, were here to keep you connected with the latest tech innovations, all while offering an enjoyable, seamless shopping experience.
         </p>
         
         <div className="mt-10 text-center">
           <a
             href="/"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition duration-200"
+            className=" btn px-6 py-3 bg-purple-500 text-white font-semibold rounded hover:bg-purple-700 transition duration-200"
           >
             Start Exploring
           </a>

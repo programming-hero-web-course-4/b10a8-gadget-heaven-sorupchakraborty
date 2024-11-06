@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="text-black p-10">
             <div className='text-center mb-16'>
-                <h1 className='text-3xl font-bold mb-3'>Gadget Heaven</h1>
+                <h1 className='text-3xl font-bold mb-3'>TechVerse</h1>
                 <p className='font-medium text-[#09080F99]'>Leading the way in cutting-edge technology and innovation.</p>
             </div>
             <div className='grid md:grid-cols-3 grid-cols-1 mx-auto text-center items-start'>
