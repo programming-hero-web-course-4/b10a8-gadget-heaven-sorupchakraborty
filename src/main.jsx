@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <div>Not Found</div>,
+    errorElement: <div className="text-center text-4xl text-red-600 font-bold p-20">Not Found</div>,
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/dashboard", element: <DashboardPage /> },
