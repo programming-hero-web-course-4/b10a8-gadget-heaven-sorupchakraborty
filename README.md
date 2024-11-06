@@ -53,7 +53,3 @@ We used **Context API** to manage data flow, such as handling cart and wishlist 
 1. **Price Limit on Cart**: Prevent adding items if the total cart value exceeds $1000.
 2. **Purchase Confirmation Modal**: After purchase, users see a confirmation and are redirected to the homepage.
 3. **Dynamic Page Titles and Favicon**: Each page has a unique title, enhancing the browsing experience.
-
----
-
-Thank you for exploring TechVerse! Feel free to clone the repository and run it locally or explore the live version linked above.
