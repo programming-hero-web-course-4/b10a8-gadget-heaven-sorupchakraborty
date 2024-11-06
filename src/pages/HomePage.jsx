@@ -9,7 +9,7 @@ const HomePage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Products");
 
   useEffect(() => {
-    fetch("/src/data/products.json")
+    fetch("/products.json")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -25,6 +25,7 @@ const HomePage = () => {
         <title>Home - Gadget Heaven</title>
       </Helmet>
       <Banner />
+      <h2 className="text-3xl text-center font-bold m-4">Explore Cutting-Edge Gadgets</h2>
       <div className="flex">
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         <main className="w-3/4 grid grid-cols-3 gap-4 p-4">

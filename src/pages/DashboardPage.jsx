@@ -26,7 +26,7 @@ const DashboardPage = () => {
     cartDispatch({ type: "SORT_CART_BY_PRICE" });
   };
 
-  const totalCartPrice = cart.reduce((total, item) => total + item.price, 0);
+  const totalCartPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
   const handlePurchase = () => {
     setShowModal(true);
@@ -46,6 +46,14 @@ const DashboardPage = () => {
       wishlistDispatch({ type: "REMOVE_FROM_WISHLIST", payload: { id } });
       toast.info("Item removed from wishlist!");
     }
+  };
+
+  const increaseQuantity = (id) => {
+    cartDispatch({ type: "INCREASE_QUANTITY", payload: { id } });
+  };
+
+  const decreaseQuantity = (id) => {
+    cartDispatch({ type: "DECREASE_QUANTITY", payload: { id } });
   };
 
   return (
@@ -99,6 +107,21 @@ const DashboardPage = () => {
                   <p className="text-sm">{item.category}</p>
                   <p className="text-sm">Rating: {item.rating}</p>
                   <p className="font-semibold">${item.price}</p>
+                  <div className="flex items-center mt-2">
+                    <button
+                      onClick={() => decreaseQuantity(item.id)}
+                      className="bg-gray-300 text-black px-2 py-1 rounded"
+                    >
+                      -
+                    </button>
+                    <span className="mx-2">{item.quantity}</span>
+                    <button
+                      onClick={() => increaseQuantity(item.id)}
+                      className="bg-gray-300 text-black px-2 py-1 rounded"
+                    >
+                      +
+                    </button>
+                  </div>
                 </div>
                 <div className="">
                   <button

@@ -10,6 +10,8 @@ const Navbar = () => {
     const { wishlist } = useContext(WishlistContext);
     const location = useLocation();
     const isHomePage = location.pathname === "/";
+    const totalCartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
 
     return (
         <div className={`container mx-auto p-2 mt-8 rounded-t-2xl ${isHomePage ? "bg-[#9538E2]" : "bg-white"} sticky top-0 z-10`}>
@@ -58,7 +60,7 @@ const Navbar = () => {
                 <div className="flex items-center">
                     {/* cart */}
                     <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                    <div tabIndex={0} role="button" className="btn btn-circle">
                             <div className="indicator">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -72,24 +74,13 @@ const Navbar = () => {
                                         strokeWidth="2"
                                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                <span className="badge badge-sm indicator-item">{cart.length}</span>
+                                <span className="badge badge-sm indicator-item bg-black text-white">{cart.length}</span>
                             </div>
                         </div>
                         {/* wishlist */}
-                        <div tabIndex={0} role="button" className="btn btn-circle">
+                        <div tabIndex={0} role="button" className="btn btn-circle mx-2">
                             <div className="indicator">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
+                                <img src={wishlistIcon} alt="" />
                                 <span className="badge badge-sm indicator-item bg-black text-white">{wishlist.length}</span>
                             </div>
                         </div>
