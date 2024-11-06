@@ -9,6 +9,9 @@ Welcome to TechVerse! This is an e-commerce platform designed to help users disc
 - **Live Website**: 
 ## [TechVerse Live Site](https://techverse-sorupcb.netlify.app/)
 
+- **Requirement Document** : 
+## [Document link](https://drive.google.com/file/d/1iWWcCt8McJuUBliXPBcSEbJFkMe3iHs2/view?usp=sharing)
+
 ---
 
 ## 🚀 React Fundamentals Used
