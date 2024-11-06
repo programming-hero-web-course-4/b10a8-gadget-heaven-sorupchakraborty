@@ -6,8 +6,7 @@ Welcome to TechVerse! This is an e-commerce platform designed to help users disc
 
 ## 🔗 Links
 
-- **Live Website**: [TechVerse Live Site](https://yourwebsite.com)
-- **Requirement Document**: [Project Requirements](https://link-to-requirements.com)
+- **Live Website**: [TechVerse Live Site](https://techverse-sorupcb.netlify.app/)
 
 ---
 
