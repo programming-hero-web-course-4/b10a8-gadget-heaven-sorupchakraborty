@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import products from "../data/products";
 import CartContext from "../context/CartContext.jsx";
 import WishlistContext from "../context/WishlistContext.jsx";
@@ -24,6 +25,9 @@ const ProductPage = () => {
 
   return (
     <div className="container mx-auto ">
+      <Helmet>
+        <title>{product.title} - Gadget Heaven</title>
+      </Helmet>
       <div className="text-center bg-[#9538E2] p-5 rounded-2xl">
         <h2 className="text-3xl text-white">Product Details</h2>
         <p className="text-white  max-w-[60%] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import ProductCard from "../components/ProductCard";
 import Sidebar from "../components/Sidebar";
 import Banner from "../components/Banner";
@@ -20,6 +21,9 @@ const HomePage = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Home - Gadget Heaven</title>
+      </Helmet>
       <Banner />
       <div className="flex">
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
