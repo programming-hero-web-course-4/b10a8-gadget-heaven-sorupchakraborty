@@ -1,15 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import cartIcon from "../assets/cart.png";
 import wishlistIcon from "../assets/wishlist.png";
-import BannerImg from "../assets/banner.jpg";
+import CartContext from '../context/CartContext';
+import WishlistContext from '../context/WishlistContext';
 
 const Navbar = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
     return (
-        <div className="container mx-auto bg-[#9538E2] p-2 mt-8 rounded-t-2xl " >
-            <div className=" flex justify-between items-center pt-5">
-                <div className="">
-                    <NavLink to="/" className="btn btn-ghost text-xl text-white">
+        <div className={`container mx-auto p-2 mt-8 rounded-t-2xl ${isHomePage ? "bg-[#9538E2]" : "bg-white"}`}>
+            <div className="flex justify-between items-center pt-5">
+                <div>
+                    <NavLink to="/" className={`btn btn-ghost text-xl text-white  ${isHomePage ? "text-white" : "text-black"}`}>
                         Gadget Heaven
                     </NavLink>
                 </div>
@@ -18,7 +22,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => (isActive ? "font-semibold text-white" : "")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn bg-[#9538E2] text-white border-none" : "btn bg-[#9538E2]")}
                             >
                                 Home
                             </NavLink>
@@ -26,7 +30,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/dashboard"
-                                className={({ isActive }) => (isActive ? "font-semibold text-white" : "")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn text-white" : "btn bg-[#9538E2] border-none")}
                             >
                                 Dashboard
                             </NavLink>
@@ -34,36 +38,29 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/statistics"
-                                className={({ isActive }) => (isActive ? "font-semibold text-white" : "")}
+                                className={({ isActive }) => (isActive ? "font-semibold btn text-white" : "btn bg-[#9538E2] border-none")}
                             >
                                 Stats
                             </NavLink>
                         </li>
                     </ul>
                 </div>
-                <div className=" flex items-center">
-                    <div className="">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle bg-white">
+                <div className="flex items-center">
+                    <div>
+                        <div tabIndex={0} role="button" className="btn btn-circle bg-white">
                             <div className="indicator">
-                                <img
-                                    src={cartIcon}
-                                    alt="Cart"
-                                    className="" />
+                                <img src={cartIcon} alt="Cart" />
                             </div>
                         </div>
                     </div>
                     <div className="dropdown dropdown-end mx-2">
                         <div tabIndex={0} role="button" className="btn btn-circle bg-white">
-                            <img
-                                src={wishlistIcon}
-                                alt="Wishlist"
-                                className="rounded-full" />
+                            <img src={wishlistIcon} alt="Wishlist" className="rounded-full" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 
