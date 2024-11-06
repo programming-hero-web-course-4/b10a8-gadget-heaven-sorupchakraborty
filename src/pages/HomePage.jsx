@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div>
       <Helmet>
-        <title>Home - Gadget Heaven</title>
+        <title>Home - TechVerse</title>
       </Helmet>
       <Banner />
       <h2 className="text-3xl text-center font-bold m-4">Explore Cutting-Edge Gadgets</h2>

@@ -245,7 +245,7 @@ const DashboardPage = () => {
   return (
     <div className="container mx-auto ">
       <Helmet>
-        <title>Dashboard - Gadget Heaven</title>
+        <title>Dashboard - TechVerse</title>
       </Helmet>
       <div className="text-center bg-[#9538E2] rounded-2xl p-5">
         <h2 className="text-3xl text-white">Dashboard</h2>

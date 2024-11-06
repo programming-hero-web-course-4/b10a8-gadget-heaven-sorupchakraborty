@@ -5,7 +5,7 @@ const StatisticsPage = () => {
   return (
     <div>
       <Helmet>
-        <title>Statistics - Gadget Heaven</title>
+        <title>Statistics - TechVerse</title>
       </Helmet>
       Statistics Page
     </div>

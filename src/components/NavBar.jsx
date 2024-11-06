@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center pt-5">
                 <div>
                     <NavLink to="/" className={`btn btn-ghost text-xl`}>
-                        Gadget Heaven
+                    TechVerse
                     </NavLink>
                 </div>
                 <div>

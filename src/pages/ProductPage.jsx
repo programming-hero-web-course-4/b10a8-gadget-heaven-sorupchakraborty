@@ -26,7 +26,7 @@ const ProductPage = () => {
   return (
     <div className="container mx-auto ">
       <Helmet>
-        <title>{product.title} - Gadget Heaven</title>
+        <title>{product.title} - TechVerse</title>
       </Helmet>
       <div className="text-center bg-[#9538E2] p-5 rounded-2xl">
         <h2 className="text-3xl text-white">Product Details</h2>
