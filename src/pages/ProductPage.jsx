@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import products from "/products.json?url";
+import products from "../data/products";
 import CartContext from "../context/CartContext.jsx";
 import WishlistContext from "../context/WishlistContext.jsx";
 import { toast, ToastContainer } from "react-toastify";

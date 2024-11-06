@@ -9,7 +9,7 @@ const HomePage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Products");
 
   useEffect(() => {
-    fetch("./products.json")
+    fetch("/src/data/products.json")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
